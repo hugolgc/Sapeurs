@@ -1,4 +1,7 @@
-#banner {
-  background-size: cover;
-  background-position: center bottom;
+.max-h-72 {
+  max-height: 18rem;
+}
+
+.big-shadow {
+  box-shadow: 0 30px 60px rgba(184, 184, 184, .5);
 }

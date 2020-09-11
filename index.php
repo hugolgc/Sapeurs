@@ -14,6 +14,10 @@ require 'controller/handler.php';
 
 switch ($page):
 
+  case 'product':
+    product();
+    break;
+
   case 'home':
   default:
     home();

@@ -68,7 +68,22 @@ ob_start();
         <div class="container mx-auto px-4">
           <h2 class="text-gray-800 text-center text-4xl font-bold mb-10">Why You Need Infograpify?</h2>
           <div class="grid grid-cols-3 gap-8 pb-16">
+
+            <?php foreach ($products as $product): ?>
+            
             <div>
+              <figure>
+                <img src="<?php assets('product/' . $product['figure']) ?>" alt="<?= $product['nom'] ?>" class="mx-auto">
+              </figure>
+              <div class="text-center px-8">
+                <h3 class="text-gray-800 text-xl font-semibold mb-2"><?= $product['nom'] ?></h3>
+                <p class="text-gray-600 font-light mb-6"><?= $product['description'] ?>.</p>
+              </div>
+            </div>
+
+            <?php endforeach; ?>
+
+            <!--<div>
               <figure>
                 <img src="https://cdn.shopify.com/s/files/1/0268/0094/7253/files/feature-illustration-1_2x_78e55e8a-a195-44ac-bfb0-672c5c897c2f_430x.png?v=1580895692" alt="" class="mx-auto">
               </figure>
@@ -76,52 +91,8 @@ ob_start();
                 <h3 class="text-gray-800 text-xl font-semibold mb-2">🔥 Modern Layouts and Infographics</h3>
                 <p class="text-gray-600 font-light mb-6">Captivate your audience with clear, compelling visuals.</p>
               </div>
-            </div>
-            <div>
-              <figure>
-                <img src="https://cdn.shopify.com/s/files/1/0268/0094/7253/files/feature-illustration-1_2x_78e55e8a-a195-44ac-bfb0-672c5c897c2f_430x.png?v=1580895692" alt="" class="mx-auto">
-              </figure>
-              <div class="text-center px-8">
-                <h3 class="text-gray-800 text-xl font-semibold mb-2">🔥 Modern Layouts and Infographics</h3>
-                <p class="text-gray-600 font-light mb-6">Captivate your audience with clear, compelling visuals.</p>
-              </div>
-            </div>
-            <div>
-              <figure>
-                <img src="https://cdn.shopify.com/s/files/1/0268/0094/7253/files/feature-illustration-1_2x_78e55e8a-a195-44ac-bfb0-672c5c897c2f_430x.png?v=1580895692" alt="" class="mx-auto">
-              </figure>
-              <div class="text-center px-8">
-                <h3 class="text-gray-800 text-xl font-semibold mb-2">🔥 Modern Layouts and Infographics</h3>
-                <p class="text-gray-600 font-light mb-6">Captivate your audience with clear, compelling visuals.</p>
-              </div>
-            </div>
-            <div>
-              <figure>
-                <img src="https://cdn.shopify.com/s/files/1/0268/0094/7253/files/feature-illustration-1_2x_78e55e8a-a195-44ac-bfb0-672c5c897c2f_430x.png?v=1580895692" alt="" class="mx-auto">
-              </figure>
-              <div class="text-center px-8">
-                <h3 class="text-gray-800 text-xl font-semibold mb-2">🔥 Modern Layouts and Infographics</h3>
-                <p class="text-gray-600 font-light mb-6">Captivate your audience with clear, compelling visuals.</p>
-              </div>
-            </div>
-            <div>
-              <figure>
-                <img src="https://cdn.shopify.com/s/files/1/0268/0094/7253/files/feature-illustration-1_2x_78e55e8a-a195-44ac-bfb0-672c5c897c2f_430x.png?v=1580895692" alt="" class="mx-auto">
-              </figure>
-              <div class="text-center px-8">
-                <h3 class="text-gray-800 text-xl font-semibold mb-2">🔥 Modern Layouts and Infographics</h3>
-                <p class="text-gray-600 font-light mb-6">Captivate your audience with clear, compelling visuals.</p>
-              </div>
-            </div>
-            <div>
-              <figure>
-                <img src="https://cdn.shopify.com/s/files/1/0268/0094/7253/files/feature-illustration-1_2x_78e55e8a-a195-44ac-bfb0-672c5c897c2f_430x.png?v=1580895692" alt="" class="mx-auto">
-              </figure>
-              <div class="text-center px-8">
-                <h3 class="text-gray-800 text-xl font-semibold mb-2">🔥 Modern Layouts and Infographics</h3>
-                <p class="text-gray-600 font-light mb-6">Captivate your audience with clear, compelling visuals.</p>
-              </div>
-            </div>
+            </div>-->
+
           </div>
         </div>
       </section>

@@ -29,7 +29,7 @@
         <div class="flex-auto">
           <div class="h-12 border border-gray-300 my-2 max-w-2xl mx-auto flex items-center text-gray-700">
             <ion-icon name="search" class="mx-3"></ion-icon>
-            <input type="text" class="outline-none apparance-none text-sm font-light w-full pr-3" placeholder="Marketing, Process, Fishbone">
+            <input type="text" class="outline-none appearance-none text-sm font-light w-full pr-3" placeholder="Marketing, Process, Fishbone">
           </div>
         </div>
         <div class="flex items-center">
