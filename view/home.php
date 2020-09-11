@@ -181,6 +181,7 @@ ob_start();
 
 <?php
 $content = ob_get_clean();
+$footer = '';
 require 'templates.php';
 
 ?>

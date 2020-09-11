@@ -15,13 +15,17 @@
 
     <header class="bg-white fixed left-0 top-0 right-0 z-10">
       <div class="flex items-center">
-        <div class="mx-6 flex items-center">
-          <img src="public/src/logo.png" alt="Titre du site" class="h-8 pr-3">
-          <h2 class="font-bold text-3xl leading-none text-gray-900">infograpify</h2>
-        </div>
+        <a href="<?php page('home') ?>">
+          <div class="mx-6 flex items-center">
+            <img src="public/src/logo.png" alt="Titre du site" class="h-8 pr-3">
+            <h2 class="font-bold text-3xl leading-none text-gray-900">infograpify</h2>
+          </div>
+        </a>
         <nav>
           <ul class="flex items-center font-light text-gray-600">
-            <li class="px-3">ALL TEMPLATES</li>
+            <li class="px-3">
+              <a href="<?php page('product') ?>">ALL TEMPLATES</a>
+            </li>
             <li class="px-3">RECENT</li>
             <li class="px-3">ICONS</li>
           </ul>
@@ -41,7 +45,7 @@
 
     <?= $content ?>
 
-    <footer class="py-20">
+    <footer class="py-20 <?= $footer ?>">
       <div class="container w-full mx-auto px-5">
         <div class="grid grid-cols-10 gap-10">
           <section class="col-span-5">

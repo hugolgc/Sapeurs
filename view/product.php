@@ -128,6 +128,7 @@ ob_start();
 
 <?php
 $content = ob_get_clean();
+$footer = 'bg-white';
 require 'templates.php';
 
 ?>
