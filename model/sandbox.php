@@ -19,3 +19,13 @@ function page($path)
 {
   echo 'index.php?page=' . $path;
 }
+
+function secure($random)
+{
+  return htmlspecialchars(addslashes($random));
+}
+
+function redirect($path)
+{
+  header('Location: index.php?page=' . $path);
+}

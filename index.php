@@ -1,7 +1,7 @@
 <?php
 
 /*
- *    Projet Genesis 2020.
+ *    Projet Allographique 2020.
  *    Crée par @hugolgc.
  */
 
@@ -16,6 +16,10 @@ switch ($page):
 
   case 'product':
     product();
+    break;
+
+  case 'single' && !empty($_GET['product']):
+    single($_GET['product']);
     break;
 
   case 'home':

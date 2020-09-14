@@ -3,5 +3,18 @@
 }
 
 .big-shadow {
-  box-shadow: 0 30px 60px rgba(184, 184, 184, .5);
+  box-shadow: 0 30px 60px rgba(184, 184, 184, .25);
+}
+
+.text-fire {
+  color: #F74F29;
+}
+
+.bg-fire {
+  background: rgb(247, 74, 43);
+  background: linear-gradient(45deg, rgba(247, 74, 43, 1), rgba(250, 154, 17, 1));
+}
+
+.border-fire {
+  border-color: #F86523;
 }

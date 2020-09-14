@@ -18,27 +18,27 @@
         <a href="<?php page('home') ?>">
           <div class="mx-6 flex items-center">
             <img src="public/src/logo.png" alt="Titre du site" class="h-8 pr-3">
-            <h2 class="font-bold text-3xl leading-none text-gray-900">infograpify</h2>
+            <h2 class="font-bold text-3xl leading-none text-gray-800">Titre site</h2>
           </div>
         </a>
         <nav>
           <ul class="flex items-center font-light text-gray-600">
             <li class="px-3">
-              <a href="<?php page('product') ?>">ALL TEMPLATES</a>
+              <a href="<?php page('product') ?>">Nos Produits</a>
             </li>
-            <li class="px-3">RECENT</li>
-            <li class="px-3">ICONS</li>
+            <li class="px-3">Photos</li>
+            <li class="px-3">Contact</li>
           </ul>
         </nav>
-        <div class="flex-auto">
-          <div class="h-12 border border-gray-300 my-2 max-w-2xl mx-auto flex items-center text-gray-700">
+        <div class="flex-auto px-16 py-2">
+          <form action="<?php page('product') ?>" method="post" class="h-12 border border-gray-300 max-w-2xl mx-auto flex items-center text-gray-700 rounded-lg">
             <ion-icon name="search" class="mx-3"></ion-icon>
-            <input type="text" class="outline-none appearance-none text-sm font-light w-full pr-3" placeholder="Marketing, Process, Fishbone">
-          </div>
+            <input required type="text" name="recherche" maxlength="30" class="outline-none appearance-none text-sm font-light w-full pr-3" placeholder="Agenda, Calendrier, Jeux">
+          </form>
         </div>
         <div class="flex items-center">
-          <button class="h-16 px-5 text-green-400">LOG IN</button>
-          <button class="h-16 px-5 text-white bg-green-400">SHOP NOW</button>
+          <button class="h-16 px-5 text-fire outline-none">Connexion</button>
+          <button class="h-16 px-5 text-white bg-fire outline-none">Acheter</button>
         </div>
       </div>
     </header>
@@ -51,35 +51,79 @@
           <section class="col-span-5">
             <h3 class="text-xl text-gray-800 font-semibold mb-6">Catégories</h3>
             <ul class="flex flex-wrap text-gray-600 font-light leading-8">
-              <li class="pr-5">Agendas</li>
-              <li class="pr-5">Avis de passage</li>
-              <li class="pr-5">Calendriers</li>
-              <li class="pr-5">Bâche PVC</li>
-              <li class="pr-5">Calendriers de poche</li>
-              <li class="pr-5">Cahiers de coloriage</li>
-              <li class="pr-5">Carnets de reçu</li>
-              <li class="pr-5">Carnets de démarchage A5</li>
-              <li class="pr-5">Cartes de message</li>
-              <li class="pr-5">Cartes de vœux</li>
-              <li class="pr-5">Gobelets réutilisables</li>
-              <li class="pr-5">Jeux pour enfants</li>
-              <li class="pr-5">Menus Sainte-Barbe</li>
-              <li class="pr-5">Peluche Pince Panda</li>
-              <li class="pr-5">Portes-clés personnalisés</li>
-              <li class="pr-5">Pour vos manifestations</li>
-              <li class="pr-5">Sacs cabas</li>
-              <li class="pr-5">Sacoches</li>
-              <li class="pr-5">Stylos</li>
-              <li class="pr-5">Taches administratives</li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=1') ?>">Agenda</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=2') ?>">Avis de passage</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=3') ?>">Calendriers</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=4') ?>">Bâche PVC</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=5') ?>">Calendriers de poche</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=6') ?>">Cahiers de coloriage</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=7') ?>">Carnets de reçu</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=8') ?>">Carnets de démarchage A5</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=9') ?>">Cartes de message</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=10') ?>">Cartes de vœux</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=11') ?>">Gobelets réutilisables</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=12') ?>">Jeux pour enfants</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=13') ?>">Menus Sainte-Barbe</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=14') ?>">Peluche Pince Panda</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=15') ?>">Portes-clés personnalisés</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=16') ?>">Pour vos manifestations</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=17') ?>">Sacs cabas</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=18') ?>">Sacoches</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=19') ?>">Stylos</a>
+              </li>
+              <li class="pr-5">
+                <a href="<?php page('product&categorie=20') ?>">Taches administratives</a>
+              </li>
             </ul>
           </section>
           <section class="col-span-2">
             <h3 class="text-xl text-gray-800 font-semibold mb-6">Menu</h3>
             <ul class="text-gray-600 font-light leading-8">
-              <li class="pr-5">Accueil</li>
+              <li class="pr-5">
+                <a href="<?php page('home') ?>">Accueil</a>
+              </li>
               <li class="pr-5">Photos</li>
               <li class="pr-5">Acheter</li>
-              <li class="pr-5">Nos produits</li>
+              <li class="pr-5">
+                <a href="<?php page('product') ?>">Nos produits</a>
+              </li>
               <li class="pr-5">Allographique</li>
               <li class="pr-5">Imprimerie Julien-Jopub</li>
             </ul>
